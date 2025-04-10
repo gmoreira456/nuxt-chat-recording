@@ -16,4 +16,11 @@ export default defineNuxtConfig({
       someValue: "on the frontend!",
     },
   },
+
+  mdc: {
+    highlight: {
+      theme: "material-theme-palenight",
+      langs: ["html", "markdown", "vue", "typescript", "javascript"],
+    },
+  },
 });
