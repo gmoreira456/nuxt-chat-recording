@@ -100,11 +100,11 @@ async function handleNewChat() {
           class="leading-4 flex items-center mt-1 text-sm text-(--ui-text-muted)"
         >
           <UIcon name="i-heroicons-arrow-left" class="mr-1" />
-          Back to Project
+          Voltar ao Projeto
         </NuxtLink>
       </div>
       <UButton color="primary" icon="i-heroicons-plus" @click="handleNewChat">
-        New Chat in Project
+        Novo Chat no Projeto
       </UButton>
     </div>
 

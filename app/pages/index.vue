@@ -12,7 +12,7 @@ async function handleCreateChat() {
     <span class="text-2xl font-bold mb-2">
       {{ appConfig.title }}
     </span>
-    <UButton class="button" @click="handleCreateChat"> Start Chat </UButton>
+    <UButton class="button" @click="handleCreateChat"> Iniciar Chat </UButton>
   </UContainer>
 </template>
 

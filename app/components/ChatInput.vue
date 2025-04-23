@@ -52,6 +52,7 @@ watch(
       class="message-input"
       :disabled="isStreaming"
       :rows="1"
+      placeholder="Pergunte alguma coisa"
       @input="adjustTextareaHeight"
       @keydown.enter.prevent="handleSendMessage"
     />

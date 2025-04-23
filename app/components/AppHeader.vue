@@ -23,7 +23,7 @@ function handleToggleSidebar() {
         @click="handleToggleSidebar"
       />
       <UButton icon="i-lucide-plus" @click="handleCreateChat">
-        New Chat
+        Novo Chat
       </UButton>
     </div>
     <div class="header-title">

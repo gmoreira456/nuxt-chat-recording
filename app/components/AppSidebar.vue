@@ -49,7 +49,7 @@ async function handleCreateChat() {
     <div v-if="chatsWithoutProject.length > 0" class="overflow-y-auto p-4">
       <div v-if="todayChats.length > 0" class="mb-4">
         <div class="flex justify-between items-center mb-2">
-          <h2 class="text-sm font-semibold text-(--ui-text-muted)">Today</h2>
+          <h2 class="text-sm font-semibold text-(--ui-text-muted)">Hoje</h2>
         </div>
         <UNavigationMenu
           orientation="vertical"
@@ -61,7 +61,7 @@ async function handleCreateChat() {
       <div v-if="lastWeekChats.length > 0" class="mb-4">
         <div class="flex justify-between items-center mb-2">
           <h2 class="text-sm font-semibold text-(--ui-text-muted)">
-            Last 7 Days
+            Últimos 7 dias
           </h2>
         </div>
         <UNavigationMenu
@@ -74,7 +74,7 @@ async function handleCreateChat() {
       <div v-if="lastMonthChats.length > 0" class="mb-4">
         <div class="flex justify-between items-center mb-2">
           <h2 class="text-sm font-semibold text-(--ui-text-muted)">
-            Last 30 Days
+            Últimos 30 dias
           </h2>
         </div>
         <UNavigationMenu
@@ -86,7 +86,9 @@ async function handleCreateChat() {
       </div>
       <div v-if="olderChats.length > 0" class="mb-4">
         <div class="flex justify-between items-center mb-2">
-          <h2 class="text-sm font-semibold text-(--ui-text-muted)">Older</h2>
+          <h2 class="text-sm font-semibold text-(--ui-text-muted)">
+            Mais antigo
+          </h2>
         </div>
         <UNavigationMenu
           orientation="vertical"
@@ -98,8 +100,8 @@ async function handleCreateChat() {
     </div>
     <div v-else class="overflow-y-auto p-4">
       <UAlert
-        title="No Chats"
-        description="Create a new chat to get started."
+        title="Nenhum chat"
+        description="Crie um novo chat para começar."
         color="neutral"
         variant="soft"
         class="mt-2"
@@ -112,7 +114,7 @@ async function handleCreateChat() {
         class="mt-2 w-full"
         @click="handleCreateChat"
       >
-        New Chat
+        Novo chat
       </UButton>
     </div>
   </aside>

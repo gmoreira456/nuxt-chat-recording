@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  title: "AI Chat",
+  title: "Chat IA",
   ui: {
     colors: {
       primary: "blue",
